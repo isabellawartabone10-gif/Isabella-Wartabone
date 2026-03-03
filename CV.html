@@ -3,104 +3,172 @@
 <head>
     <title>Curriculum Vitae</title>
 
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+
     <style>
         body {
-            background-color: #f2e9ec; /* Abu pink soft */
-            font-family: "Times New Roman", Times, serif;
-            margin: 40px;
+            background: linear-gradient(to right, #f8eef1, #f2e9ec);
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 40px;
+        }
+
+        .card {
+            background-color: white;
+            max-width: 900px;
+            margin: auto;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-family: 'Pacifico', cursive;
+            color: #e48aa4;
+            margin: 0;
+        }
+
+        .header h2 {
+            margin-top: 10px;
+            color: #666;
+            font-weight: 400;
         }
 
         .container {
             display: flex;
-            gap: 50px;
+            gap: 40px;
             align-items: flex-start;
         }
 
-        img {
-            width: 250px;
-            border-radius: 10px;
+        .foto img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 6px solid #f8d7e0;
         }
 
         .kanan {
-            max-width: 600px;
+            flex: 1;
         }
 
-        h1, h2, h3 {
-            color: #4a4a4a;
-            margin-bottom: 5px;
+        h3 {
+            color: #d67c96;
+            margin-top: 25px;
         }
 
         p {
             text-align: justify;
+            line-height: 1.6;
         }
 
-        a {
-            color: #333;
-            text-decoration: none;
-        }
-
-        a:hover {
-            text-decoration: underline;
+        ul, ol {
+            line-height: 1.6;
         }
 
         hr {
             border: none;
-            border-top: 1px solid #c9bcbc;
-            margin-top: 30px;
+            border-top: 1px solid #eee;
+            margin: 30px 0;
+        }
+
+        .footer {
+            text-align: center;
+        }
+
+        .instagram-btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: 0.3s;
+        }
+
+        .instagram-btn:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .foto {
+                margin-bottom: 20px;
+            }
         }
     </style>
 </head>
 
 <body>
 
-    <h1>Curriculum Vitae</h1>
-    <h2>Isabella Nurhaifa Wartabone</h2>
+    <div class="card">
 
-    <div class="container">
-        
-        <!-- Foto -->
-        <div>
-            <img src="images/me.png">
+        <div class="header">
+            <h1>Curriculum Vitae</h1>
+            <h2>Isabella Nurhaifa Wartabone</h2>
         </div>
 
-        <!-- Bagian Kanan -->
-        <div class="kanan">
+        <div class="container">
+            
+            <div class="foto">
+                <img src="images/me.png">
+            </div>
 
-            <p>
-                Mahasiswa Informatika dengan minat pada pemrograman dan pengembangan web. 
-                Memiliki dasar dalam Python dan C++, serta berkomitmen untuk terus belajar 
-                dan berkembang di bidang teknologi.
-            </p>
+            <div class="kanan">
 
-            <h3>Pendidikan :</h3>
-            <ol>
-                <li>SD Negeri 03 Manado (2012-2018)</li>
-                <li>SMP Negeri 3 Manado (2018-2021)</li>
-                <li>SMK Negeri 3 Manado - RPL (2021-2024)</li>
-            </ol>
+                <p>
+                    Mahasiswa Informatika dengan minat pada pemrograman dan pengembangan web. 
+                    Memiliki dasar dalam Python dan C++, serta berkomitmen untuk terus belajar 
+                    dan berkembang di bidang teknologi.
+                </p>
 
-            <h3>Pengalaman PKL :</h3>
-            <ul>
-                <li>
-                    <a href="https://share.google/1jS8wNtRy5cGZIQ3Z">
-                        Inspektorat Provinsi Sulawesi Utara
-                    </a>
-                    (Februari 2023 - Mei 2023)
-                </li>
-                <li>
-                    <a href="https://share.google/7YMM2g9JciXRvbQ9h">
-                        Kantor BKN Regional XI Manado
-                    </a>
-                    (Juli 2023 - Oktober 2023)
-                </li>
-            </ul>
+                <h3>Pendidikan</h3>
+                <ol>
+                    <li>SD Negeri 03 Manado (2012-2018)</li>
+                    <li>SMP Negeri 3 Manado (2018-2021)</li>
+                    <li>SMK Negeri 3 Manado - RPL (2021-2024)</li>
+                </ol>
 
+                <h3>Pengalaman PKL</h3>
+                <ul>
+                    <li>
+                        <a href="https://share.google/1jS8wNtRy5cGZIQ3Z">
+                            Inspektorat Provinsi Sulawesi Utara
+                        </a>
+                        (Februari 2023 - Mei 2023)
+                    </li>
+                    <li>
+                        <a href="https://share.google/7YMM2g9JciXRvbQ9h">
+                            Kantor BKN Regional XI Manado
+                        </a>
+                        (Juli 2023 - Oktober 2023)
+                    </li>
+                </ul>
+
+            </div>
         </div>
+
+        <hr>
+
+        <div class="footer">
+            <a class="instagram-btn" href="https://www.instagram.com/aevella_?igsh=b2s4djR5MmllZ3hk" target="_blank">
+                Follow My Instagram
+            </a>
+        </div>
+
     </div>
-
-    <hr>
-
-    <a href="https://www.instagram.com/aevella_?igsh=b2s4djR5MmllZ3hk">Instagram</a>
 
 </body>
 </html>
