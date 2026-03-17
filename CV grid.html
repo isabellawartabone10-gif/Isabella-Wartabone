@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Portofolio</title>
+
+<style>
+
+body{
+    font-family: Arial, sans-serif;
+    background:#f4f4f4;
+    margin:0;
+}
+
+.container{
+    width:900px;
+    margin:auto;
+    padding:20px;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    gap:20px;
+    align-items:stretch;
+}
+
+/* CARD */
+.card{
+    background:white;
+    padding:25px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    border-radius:10px;
+}
+
+/* KIRI */
+.profile{
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    text-align:center;
+}
+
+/* FOTO */
+.profile img{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:10px;
+    border:3px solid #007BFF;
+    margin:20px auto;
+}
+
+/* ATAS */
+.top-profile h2{
+    margin-top:10px;
+    font-size:24px;
+}
+
+.top-profile p{
+    font-size:16px;
+}
+
+/* BAWAH (INFORMASI TAMBAHAN) */
+.bottom-profile{
+    text-align:left;
+    margin-top:20px;
+}
+
+/* JUDUL TETAP BIRU */
+.bottom-profile h3{
+    color:#007BFF;
+    border-bottom:2px solid #007BFF;
+    font-size:18px;
+    padding-bottom:5px;
+}
+
+/* ISI LEBIH KECIL */
+.bottom-profile p{
+    font-size:12px;
+    color:#666;
+    line-height:1.6;
+}
+
+/* KANAN */
+.right{
+    display:grid;
+    gap:20px;
+}
+
+/* JUDUL UMUM */
+h3{
+    color:#007BFF;
+    border-bottom:2px solid #007BFF;
+    padding-bottom:5px;
+    font-size:20px;
+}
+
+/* TEXT */
+p{
+    line-height:1.8;
+    font-size:16px;
+}
+
+/* LIST */
+ul, ol{
+    padding-left:20px;
+    font-size:16px;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="grid">
+
+    <!-- KIRI -->
+    <div class="card profile">
+
+        <div class="top-profile">
+            <h2>Isabella Nurhaifa Wartabone</h2>
+            <p>Web Developer | UI Designer | Mahasiswa</p>
+            <img src="images/me.png">
+        </div>
+
+        <div class="bottom-profile">
+            <h3>Informasi Tambahan</h3>
+            <p>Hobi: Membaca dan Mendengarkan Musik</p>
+            <p>Email: isabellawartabone02@gmail.com</p>
+            <p>© 2026 Isabella Nurhaifa Wartabone</p>
+        </div>
+
+    </div>
+
+    <!-- KANAN -->
+    <div class="right">
+
+        <!-- TENTANG + SKILL -->
+        <div class="card">
+            <h3>Tentang Saya</h3>
+            <p>
+            Mahasiswa Informatika dengan minat pada pemrograman dan pengembangan web.
+            Memiliki dasar dalam Python dan C++, serta berkomitmen untuk terus belajar
+            dan berkembang di bidang teknologi.
+            </p>
+
+            <h3>Skill</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Python Dasar</li>
+                <li>C++ Dasar</li>
+            </ul>
+        </div>
+
+        <!-- PENGALAMAN -->
+        <div class="card">
+            <h3>Pengalaman PKL</h3>
+            <ul>
+
+                <li>
+                <a href="https://share.google/1jS8wNtRy5cGZIQ3Z">
+                Inspektorat Provinsi Sulawesi Utara
+                </a>
+                (Februari 2023 - Mei 2023)
+                </li>
+
+                <li>
+                <a href="https://share.google/7YMM2g9JciXRvbQ9h">
+                Kantor BKN Regional XI Manado
+                </a>
+                (Juli 2023 - Oktober 2023)
+                </li>
+
+            </ul>
+        </div>
+
+        <!-- PENDIDIKAN -->
+        <div class="card">
+            <h3>Pendidikan</h3>
+            <ol>
+                <li>SD Negeri 03 Manado (2012-2018)</li>
+                <li>SMP Negeri 3 Manado (2018-2021)</li>
+                <li>SMK Negeri 3 Manado - RPL (2021-2024)</li>
+                <li>Politeknik Negeri Manado - D4 Teknik Informatika (2024-Sekarang)</li>
+            </ol>
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+</body>
+</html>
